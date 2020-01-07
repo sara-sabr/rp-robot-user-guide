@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>R&amp;P - Robot User Guide</title>
+  <title>Freelancer - Start Bootstrap Theme</title>
 
   <!-- Custom fonts for this theme -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -109,34 +109,28 @@
 		<div class="col-md-6 col-lg-4">
 			
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
+            <button class="portfolio-item-caption h-100 w-100">
 <!--                <i class="fas fa-plus fa-3x"></i>-->
-              </div>
-            </div>
+            </button>
             <img class="img-fluid" src="img/portfolio/create-visitor-pass.png" alt="">
           </div>
         </div>
         <!-- Portfolio Item 2 -->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <button class="portfolio-item-caption h-100 w-100">
 <!--                <i class="fas fa-plus fa-3x"></i>-->
-              </div>
-            </div>
+            </button>
             <img class="img-fluid" src="img/portfolio/control-robot-mobile.png" alt="">
           </div>
         </div>
 
         <!-- Portfolio Item 3 -->
         <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <button class="portfolio-item-caption h-100 w-100">
 <!--                <i class="fas fa-plus fa-3x"></i>-->
-              </div>
-            </div>
+            </button>
             <img class="img-fluid" src="img/portfolio/control-robot-browser.png" alt="">
           </div>
         </div>
@@ -200,35 +194,84 @@
       </div>
 
       <!-- About Section Content -->
-      <div class="row">
+      <div class="col-12">
+		  
         <div class="text-center mt4">
           <p class="lead">Do you still have a few questions about the Telepresence Robots or the pilot project? Here are some solutions to frequently asked questions!</p>
- 	  
+		</div>
+		  
+		<div class="accordion" id="accordionExample">
+		  <div class="card">
+			<div class="card-header" id="headingOne">
+			  <h2 class="mb-0">
+				<button class="btn collapsed collapsible" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				  Are the robots taking over the office?
+				</button>
+			  </h2>
+			</div>
+
+			<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+			  <div class="card-body accodion-content">
+				Yes. Slowly but surely, we will have to bow down to our robot overlords... Please don't call them Shirley.
+			  </div>
+			</div>
+		  </div>
+		  <div class="card">
+			<div class="card-header" id="headingTwo">
+			  <h2 class="mb-0">
+				<button class="btn collapsed collapsible" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				  Are the robots autonomous like a self-driving car?
+				</button>
+			  </h2>
+			</div>
+			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+			  <div class="card-body accodion-content">
+				No. The robots can only be controlled by a user. However, they are always learning.
+			  </div>
+			</div>
+		  </div>
+		  <div class="card">
+			<div class="card-header" id="headingThree">
+			  <h2 class="mb-0">
+				<button class="btn collapsed collapsible" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				  Can the robots use the stairs?
+				</button>
+			  </h2>
+			</div>
+			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+			  <div class="card-body accodion-content">
+				The robots can only go down stairs, and they do it very well. If they survive the fall without fatal damage, they will never be able to make it back up the stairs. Drive them carefully!
+			  </div>
+			</div>
+		  </div>
+		</div>
+ <!--	  
         <div class="text-center mt4">
 			
+
 			<button class="btn btn-xl btn-outline-light collapsible">
-<!--				<i class="fas fa-arrow-circle-right"></i>&nbsp;&nbsp;&nbsp;&nbsp; -->
-				Are the robots taking over the office?
-			</button>
+				Are the robots taking over the office?</button>
 			<div class="content lead">
-			  <p>Yes. Slowly but surely, we will have to bow down to our robot overlords... Please don't call them Shirley.</p>
+			  <p class="contentText">Yes. Slowly but surely, we will have to bow down to our robot overlords... Please don't call them Shirley.</p>
 			</div> 
 			
 			<button class="btn btn-xl btn-outline-light collapsible">
 				Are the robots autonomous like a self-driving car?</button>
 			<div class="content lead">
-			  <p>No. The robots can only be controlled by a user. However, they are always learning.</p>
+			  <p class="contentText">No. The robots can only be controlled by a user. However, they are always learning.</p>
 			</div> 
 			
 			<button class="btn btn-xl btn-outline-light collapsible">
 				Can the robots use the stairs?</button>
 			<div class="content lead">
-			  <p>The robots can only go down stairs, and they do it very well. If they survive the fall without fatal damage, they will never be able to make it back up the stairs. Drive them carefully!</p>
+			  <p class="contentText">The robots can only go down stairs, and they do it very well. If they survive the fall without fatal damage, they will never be able to make it back up the stairs. Drive them carefully!</p>
 			</div> 
-			
+			 
         </div>
-      </div>
 
+			
+      </div>
+-->
       <!-- About Section Button -->
 <!--
       <div class="text-center mt-4">
@@ -238,8 +281,7 @@
         </a>
       </div>
 -->
-
-      </div>
+	  </div>
 	</div>
   </section>
 
@@ -376,7 +418,10 @@
   <!-- Copyright Section -->
   <section class="copyright py-4 text-center text-white">
     <div class="container">
-      <small>Copyright &copy; Research &amp; Prototyping 2020</small>
+      <!--
+		<small>Copyright &copy; Research &amp; Prototyping 2020</small>
+	  -->
+		<small>Research &amp; Prototyping 2020</small>
     </div>
   </section>
 
@@ -416,19 +461,19 @@
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5"><strong>Step 1. </strong>To create a temporary share link, launch the Drivers menu by tapping the icon indicated below.</p>
 				<!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/double-create-visitor-pass-01.PNG" alt=""> 
+                <img class="img-fluid rounded mb-5" src="img/portfolio/double-create-visitor-pass-01.png" alt=""> 
 				<!-- Portfolio Modal - Text -->
                 <p class="mb-5"><strong>Step 2. </strong>Next, tap Create Visitor Pass.</p>  
 				<!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/double-create-visitor-pass-02.PNG" alt="">
+                <img class="img-fluid rounded mb-5" src="img/portfolio/double-create-visitor-pass-02.png" alt="">
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5"><strong>Step 3. </strong>On the next window, simply enter in the email address, start date and duration. After you have entered all the information, tap Send Link.</p>
 				<!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/double-create-visitor-pass-03.PNG" alt="">
+                <img class="img-fluid rounded mb-5" src="img/portfolio/double-create-visitor-pass-03.png" alt="">
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5"><strong>Step 4. </strong>In the main Drivers menu, you will now see their email address followed by the date and time they have access to Double.</p>
 				<!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/double-create-visitor-pass-04.PNG" alt="">
+                <img class="img-fluid rounded mb-5" src="img/portfolio/double-create-visitor-pass-04.png" alt="">
                 
 				<p class="mb-5"><strong>Step 5. </strong>Shortly thereafter, they will receive an email with a unique link that will automatically connect them to Double.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
@@ -467,7 +512,7 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/double-robot-mobile-instructions.PNG" alt="">
+                <img class="img-fluid rounded mb-5" src="img/portfolio/double-robot-mobile-instructions.png" alt="">
                 <!-- Portfolio Modal - Text 
                 <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>-->
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
