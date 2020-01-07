@@ -23,52 +23,60 @@
 	font-size: 1.4rem;
   	font-weight:bold;
 	margin: 10px 0 0 0;
-
+	color:#0072c1;
 }
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.activeCOLL, .collapsible:hover {
-  
+.collapsible::after {
+	
+	font-family: "Font Awesome 5 Free"; 
+	content: "\f056";
+	font-size: 1.4rem;
+	float: right;
+	color: #0072c1;
 	
 }
-.collapsible:after {
-	/*content: '\02795';  Unicode character for "plus" sign (+) */
+.collapsible.collapsed:after {
 	font-family: "Font Awesome 5 Free"; 
 	content: "\f055";
 	font-size: 1.4rem;
-	color: #fff;
+	color: #0072c1;
 	float: right;
 	margin-left: 5px;
 	border: none;
 }
-
-.activeCOLL:after {
-  /*content: "\2796";  Unicode character for "minus" sign (-) */
-	font-family: "Font Awesome 5 Free"; 
-	content: "\f056";
-	font-size: 1.4rem;
-		color: white;
-}
-.collapsible:hover:after{
-	color: #11181f;
+.collapsible:hover:after, .collapsible:hover{
+	color: #ff8500;
 }
 
-.collapsible:focus{
-	background-color: #fff;
-	color: #11181f;
-}
-
-.collapsible:focus:after{
-	color: #11181f;
+.collapsible:focus, .collapsible:focus:after{
+	color: #ff8500;
 }
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-  padding: 10px 18px 0 20px;
+  padding: 0px 0px 0 0px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 	text-align: left;
-} 
+	
+}
+.contentText
+{
+	padding: 10px 20px 0px 20px;
+}
+
+
+.accodion-content
+{
+	/*
+	border: 0.125rem solid rgba(0, 0, 0, 0.125);
+	border-radius: 8px;
+	*/
+	margin: 24px;
+	color: #11181f;	
+}
+
+
+
 
 /*----- /Custom CSS -----*/
