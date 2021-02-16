@@ -27,7 +27,8 @@ jobs:
           echo "NPM: $(npm -v)"
           echo "::endgroup::"
       - run: npm update
-      - run: git config --global user.name 'Automation'
+      - run: | 
+          git config --global user.name 'Automation'
           git config --global user.email 'sara-rp-sabr@users.noreply.github.com'
           git commit -am "Automated update"
           git push
