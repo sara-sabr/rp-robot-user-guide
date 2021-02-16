@@ -1,0 +1,33 @@
+# This automatically updates the dependencies on a daily basis. 
+
+name: Auto-Update
+
+# Controls when the action will run. 
+on:
+  schedule:
+    - cron: "* * */1 * *"
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - run: |
+          echo "::group::Environment Information"
+          echo "Node Version: $(node -v)"
+          echo "NPM: $(npm -v)"
+          echo "::endgroup::"
+      - run: npm update
+      - run: git config --global user.name 'Automation'
+          git config --global user.email 'sara-rp-sabr@users.noreply.github.com'
+          git commit -am "Automated update"
+          git push
