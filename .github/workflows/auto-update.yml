@@ -27,6 +27,7 @@ jobs:
           echo "NPM: $(npm -v)"
           echo "::endgroup::"
       - run: npm update
+      - run: npm audit fix
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Apply npm update. 
